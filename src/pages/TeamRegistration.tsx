@@ -56,13 +56,11 @@ const TeamRegistration = () => {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    // Store form data and show payment section
     setFormData(values);
     setShowPayment(true);
   }
   
   function handlePayment() {
-    // In a real application, this would integrate with a payment gateway
     console.log("Processing payment for team:", formData);
     
     toast({
@@ -70,7 +68,6 @@ const TeamRegistration = () => {
       description: "Processing your payment...",
     });
     
-    // Simulate payment processing
     setTimeout(() => {
       navigate(`/tournament/${id}/payment-success`);
     }, 1500);

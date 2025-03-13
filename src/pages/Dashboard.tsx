@@ -6,7 +6,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { CalendarDays, Clock, Trophy, User } from "lucide-react";
 
-// Mock data for upcoming tournaments
 const upcomingTournaments = [
   {
     id: "1",
@@ -26,7 +25,6 @@ const upcomingTournaments = [
   }
 ];
 
-// Mock data for past tournaments
 const pastTournaments = [
   {
     id: "3",

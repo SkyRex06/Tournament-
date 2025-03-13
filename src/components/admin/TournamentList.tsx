@@ -10,7 +10,6 @@ type TournamentListProps = {
   status: "upcoming" | "live" | "past";
 };
 
-// Mock tournament data
 const mockTournaments = [
   {
     id: "t1",
@@ -58,7 +57,6 @@ const TournamentList = ({ status }: TournamentListProps) => {
   const [tournaments, setTournaments] = useState(mockTournaments.filter(t => t.status === status));
 
   const handleDelete = (id: string) => {
-    // In a real app, this would make an API call to delete the tournament
     setTournaments(tournaments.filter(t => t.id !== id));
     toast({
       title: "Tournament Deleted",
@@ -67,7 +65,6 @@ const TournamentList = ({ status }: TournamentListProps) => {
   };
 
   const updateRoomDetails = (id: string) => {
-    // In a real app, this would navigate to a form to update room details
     navigate(`/admin/tournament/${id}/update-room`);
   };
 

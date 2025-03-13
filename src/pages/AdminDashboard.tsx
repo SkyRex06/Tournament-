@@ -13,7 +13,6 @@ const AdminDashboard = () => {
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(true);
   
-  // Check if admin is logged in
   useEffect(() => {
     const adminToken = localStorage.getItem("adminToken");
     if (!adminToken) {

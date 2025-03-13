@@ -58,10 +58,8 @@ const Login = () => {
   });
 
   function onUserSubmit(values: z.infer<typeof userFormSchema>) {
-    // In a real application, you would handle authentication here
     console.log(values);
     
-    // Mock successful login - store token in localStorage
     localStorage.setItem("userToken", "mock-jwt-token");
     
     toast({
@@ -69,13 +67,10 @@ const Login = () => {
       description: "Welcome back to BGMI Tournaments!",
     });
     
-    // Redirect to home page after login
     navigate("/");
   }
 
   function onAdminSubmit(values: z.infer<typeof adminFormSchema>) {
-    // In a real application, you would validate admin credentials against a database
-    // For demo purposes, we'll use hardcoded credentials
     if (values.adminId === "admin123" && values.password === "password123") {
       localStorage.setItem("adminToken", "admin-jwt-token");
       

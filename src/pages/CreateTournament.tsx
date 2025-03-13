@@ -76,7 +76,6 @@ const CreateTournament = () => {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    // In a real application, you would save the tournament to the database
     console.log(values);
     
     toast({
@@ -84,7 +83,6 @@ const CreateTournament = () => {
       description: "The tournament has been successfully created.",
     });
     
-    // Redirect to admin dashboard
     navigate("/admin/dashboard");
   }
 

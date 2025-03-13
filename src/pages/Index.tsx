@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Trophy, Users, Zap } from "lucide-react";
 
-// Mock tournament data
 const mockTournaments = [
   {
     id: "1",

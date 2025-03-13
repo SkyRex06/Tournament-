@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Calendar, Clock, Trophy, Users, AlertCircle } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
-// Mock tournament data (in a real app, this would be fetched from an API)
 const mockTournament = {
   id: "1",
   title: "TDM Tournament",
@@ -33,7 +32,6 @@ const mockTournament = {
 
 const TournamentDetails = () => {
   const { id } = useParams();
-  // In a real app, you would fetch the tournament details using the ID
 
   return (
     <div className="min-h-screen bg-background">

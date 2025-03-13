@@ -63,7 +63,6 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// BGMI Theme Colors
 				bgmi: {
 					black: '#0A0A0A',
 					gold: '#FFD700',

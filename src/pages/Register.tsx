@@ -48,9 +48,7 @@ const Register = () => {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    // In a real application, you would handle registration here
     console.log(values);
-    // Redirect to login page or dashboard
   }
 
   return (
